@@ -1,5 +1,5 @@
 describe('empty spec', () => {
-  it('passes', () => {
+  it('passes', () => { 
     cy.visit('https://proman-delta.vercel.app/login')
     cy.get('[name=email]')
       .type('shine.sood91@gmail.com')

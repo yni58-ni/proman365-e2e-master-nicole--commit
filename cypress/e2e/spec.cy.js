@@ -20,8 +20,8 @@ describe('empty spec', () => {
       .should('have.value','shine.sood91@gmail.com')
 
       cy.get('[name=password]')
-      .type('wrrrrrrrrrrong')
-      .should('have.value','wrrrrrrrrrrong')
+      .type('wrrrrrrrrong')
+      .should('have.value','wrrrrrrrrong')
 
       cy.get('button:contains("Login")').click().should('be.disabled')
   })

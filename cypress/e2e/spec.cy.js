@@ -1,3 +1,4 @@
+// one positive one negative test
 describe('empty spec', () => {
   it('passes', () => { 
     cy.visit('https://proman-delta.vercel.app/login')
@@ -12,15 +13,15 @@ describe('empty spec', () => {
       cy.get('button:contains("Login")').click().should('be.enabled')
   })
 
-  it('fail',()=>{
+  it('negative',()=>{
     cy.visit('https://proman-delta.vercel.app/login')
     cy.get('[name=email]')
       .type('shine.sood91@gmail.com')
       .should('have.value','shine.sood91@gmail.com')
 
       cy.get('[name=password]')
-      .type('wrrrrrrong')
-      .should('have.value','wrrrrrrong')
+      .type('wrrrrrrrrrrong')
+      .should('have.value','wrrrrrrrrrrong')
 
       cy.get('button:contains("Login")').click().should('be.disabled')
   })
